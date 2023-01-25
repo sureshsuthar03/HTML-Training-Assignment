@@ -1,0 +1,211 @@
+/* css for login page */
+*{
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+/* body{
+    
+} */
+.container{
+    padding-left: 120px;
+    height: 720px;
+    width: 1560px;
+    display: flex;
+    padding-top:80px ;
+}
+.firstpage-img{
+    margin: auto;
+    width: 576px;
+    height: 576px;
+    box-shadow: 0px 4px 31px #0000000A;
+    border: 20px solid #FFFFFF;
+    opacity: 1;
+    border-radius: 50%;
+}
+.firstpage-img img{
+    border-radius: 50%;
+}
+.right-text{
+    float: right;
+    margin: auto;
+}
+.txt img{
+    width: 272px;
+    height: 58px;
+}
+.txt p{
+    width: 600px;
+    height: 100px;
+    text-align: left;
+    font: normal normal 300 40px/47px Arial;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+.txt p span{
+    width: 137px;
+    height: 53px;
+    text-align: left;
+    font: normal normal 900 40px/53px Arial;
+    letter-spacing: 0px;
+    color: #C8242F;
+    opacity: 1;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+.login p{
+    width: 260px;
+    height: 33px;
+    text-align: left;
+    font: normal normal normal 25px/33px Arial;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+.login input[type="text"]{
+    margin: 20px 0px;
+    width: 429px;
+    height: 49px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding: 0px 15px;
+    font-size: 18px;
+}
+.login input[type="submit"]{
+    width: 138px;
+    height: 45px;
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    border: none;
+
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.login .btn{
+    width: 429px;  
+}
+.login .btn #fgt{
+    flex: none;
+    float: right;
+    margin-top: 10px;
+    font: normal normal normal 20px Arial;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    text-decoration: none;
+}
+.login p{
+    width:100%;
+    font: normal normal normal 20px Arial;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    text-decoration: none;
+}
+.login #reg{
+    font: normal normal normal 20px Arial;
+    letter-spacing: 0px;
+    color:  #C8242F;;
+    text-decoration: none;
+}
+
+
+/* css for dashboard */
+.header-dash{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.menu-bar{
+    width: 18px;
+    height: 12px;
+    padding-left: 15px;
+    background-color: #FFFFFF;
+}
+.header-logo{
+    width: 142px;
+    height: 30px;
+    padding-left: 15px;
+    background-color: #FFFFFF;
+}
+.search{
+    padding-left: 15px;
+    height: 25px;
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    top:5px;
+    left: 20px;
+    z-index: 1;
+    height: 20px;
+    background-color: #FFFFFF;
+}
+.search-bar{
+    height: 25px;
+    width: 600px;
+    padding: 5px 35px;
+    border: none;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+.noti-icon{
+    width: 22px;
+    height: 21px;
+    padding:5px 15px;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: 0px;
+}
+.profile{
+    width: 44px;
+    height: 44px;
+    padding-left: 15px;
+    background-color: #FFFFFF;
+    margin-right: 0px;
+}
+.header-dash p{
+    height: 21px;
+    text-align: left;
+    padding-left:15px;
+    background-color: #FFFFFF;  
+    margin-right: 0px;
+}
+.down-arrow{
+    padding:15px 15px;
+    background-color: #FFFFFF;
+    margin-right: 0px;
+}
+nav{
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    width:242px;
+}
+nav ul li{
+    marker: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+nav img{
+    width:20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+li p{
+    padding-left: 10px;
+}
+.dash{
+    color: #C8242F;
+    background-color:#fff3f4;
+}
+.first-menu{
+    background-color: #fff3f4;
+}
