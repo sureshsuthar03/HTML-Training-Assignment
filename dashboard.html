@@ -6,57 +6,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="boostrap" href="css/bootstrap.min.css"/>
-    <link rel="boostrap" href="js/bootstrap.bundle.min.js"/>
+    
+    <!-- <link rel="script" href="js/bootstrap.bundle.min.js"/> -->
 </head>
 <body>
     <header class="header-dash">
-        <div class="menu-bar" > <img src="images/menu-bar.svg" alt="wait"> </div>
-        <div class="header-logo"> <img src="images/header-logo.svg" alt="wait"> </div>
+        <div class="menu-bar" > <img src="./images/menu-bar.svg" alt="wait"> </div>
+        <div class="header-logo"> <img src="./images/header-logo.svg" alt="wait"> </div>
         <div class="search"> 
-            <img class="search-icon" src="images/search-icon.svg" alt="wait">
-            <input class="search-bar" stype="search" placeholder="Search"/> 
+            <img class="search-icon" src="./images/search-icon.svg" alt="wait">
+            <input class="search-bar" type="search" placeholder="Search"/> 
         </div>
-        <div class="noti-icon"> <img src="images/notification-icon.svg" alt="wait"> </div>
-        <div class="profile"> <img src="images/profile.png" alt="wait"> </div>
+        <div class="noti-icon"> <img src="./images/notification-icon.svg" alt="wait"> </div>
+        <div class="profile"> <img src="./images/profile.png" alt="wait"> </div>
         <p>user</p>
-        <div class="down-arrow"> <img src="images/downward-arrow.svg" alt="wait"> </div>
+        <div class="down-arrow"> <img src="./images/downward-arrow.svg" alt="wait"> </div>
     </header>
     <main>
         <nav>
             <ul>
                 <li class="first-menu">
-                    <img src="images/dashboard-active.svg" alt="wait">
+                    <img src="./images/dashboard-active.svg" alt="wait">
                     <p class="dash">Dashboard</p>
                 </li>
                 <li>
-                    <img src="images/graph-default.svg" alt="wait">
+                    <img src="./images/graph-default.svg" alt="wait">
                     <p>Analysis</p>
                 </li>
                 <li>
-                    <img src="images/inbox-default.svg" alt="wait">
+                    <img src="./images/inbox-default.svg" alt="wait">
                     <p>Inbox</p>
                 </li>
                 <li>
-                    <img src="images/clock-default.svg" alt="wait">
+                    <img src="./images/clock-default.svg" alt="wait">
                     <p>History</p>
                 </li>
                 <li>
-                    <img src="images/user-default.svg" alt="wait">
+                    <img src="./images/user-default.svg" alt="wait">
                     <p>User</p>
                 </li>
                 <li>
-                    <img src="images/maintenance-default.svg" alt="wait">
+                    <img src="./images/maintenance-default.svg" alt="wait">
                     <p>Maintenance</p>
                 </li>
                 <li>
-                    <img src="images/setting-default.svg" alt="wait">
+                    <img src="./images/setting-default.svg" alt="wait">
                     <p>Setting</p>
                 </li>
             </ul>
         </nav>
+        <section class="main-contant">
+            <h1>Dashboard</h1>
+            <div class="first-row">
+                <div class="fr-contant">
+                    <img src="./images/star.svg" alt="wait">
+                    <div class="pro-details">
+                        <h3>23,456</h3>
+                        <p>New Product</p>
+                    </div>
+                </div>
+                <div class="fr-contant">
+                    <img src="./images/new-product.svg" alt="wait">
+                    <div class="pro-details">
+                        <h3>2345</h3>
+                        <p>Add Product</p>
+                    </div>
+                </div>
+                <div class="fr-contant">
+                    <img src="./images/total-product.svg" alt="wait">
+                    <div class="pro-details">
+                        <h3>32,456</h3>
+                        <p>Total Product</p>
+                    </div>
+                </div>
+                <div class="fr-contant">
+                    <img src="./images/dollar-filled.svg" alt="wait">
+                    <div class="pro-details">
+                        <h3>5678</h3>
+                        <p>Today's Sale</p>
+                    </div>
+                </div>
+                <div class="fr-contant">
+                    <img src="./images/money-bag.svg" alt="wait">
+                    <div class="pro-details">
+                        <h3>33,5342</h3>
+                        <p>Total Sale</p>
+                    </div>
+                </div>
+            </div>
+            <div class="second-row">
+                <div class="line-chart">
+                    <div class="line-chart-head">
+                        <h3>Sale</h3>
+                        <div>
+                            <p>Weekly</p>
+                            <p>Monthly</p>
+                            <span class="line-year">Yearly</span>
+                        </div>
+                    </div>
+                    <img src="./images/data-graph.png" alt="wait">
+                </div>
+                <div class="pie-chart">
+                    <div class="pie-chart-head">
+                        <h3>Sales by Country</h3>
+                    </div>
+                    <img src="./images/pie-chart.svg" alt="wait">
+                        <div class="pie-legend">
+                            <div>
+                                <div class="united"></div>
+                                <p>United States of America</p>
+                            </div>
+                            <div>
+                                <div class="canada"></div>
+                                <p>Canada</p>
+                            </div>
+                            <div>
+                                <div class="russia"></div>
+                                <p>Russia</p>
+                            </div>
+                            <div>
+                                <div class="india"></div>
+                                <p>India</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="third-row">
+                <div class="third-row-head">
+                    <h1>Invoices</h1>
+                    <p>View All</p>
+                </div>
+                <div class="third-row-contant">
+                    <table class="table"> 
+                        <thead>
+                            <tr>
+                                <td >INVOICE</td>
+                                <td class="text-center">COMPANY NAME</td>
+                                <td class="text-center">EMAIL</td>
+                                <td class="text-center">DUE DATE</td>
+                                <td class="text-center">STATUS</td>
+                                <td class="text-right">AMOUNT</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >651535</td>
+                                <td class="text-center">Public Adjusting Firm</td>
+                                <td class="text-center">georgia.young@example.com</td>
+                                <td class="text-center">24 May,2020</td>
+                                <td class="text-center"><span class="paid">Paid</span></td>
+                                <td class="text-right">$47,800</td>
+                            </tr>
+                            <tr>
+                                <td >558612</td>
+                                <td class="text-center">Other</td>
+                                <td class="text-center">jessica.hanson@example.com</td>
+                                <td class="text-center">24 May,2020</td>
+                                <td class="text-center"><span class="paid">Paid</span></td>
+                                <td class="text-right">$98,000</td>
+                            </tr>
+                            <tr>
+                                <td >558612</td>
+                                <td class="text-center">Vendor</td>
+                                <td class="text-center">alma.lawson@example.com</td>
+                                <td class="text-center">8 Sep,2020</td>
+                                <td class="text-center"><span class="paid">Paid</span></td>
+                                <td class="text-right">$20,900</td>
+                            </tr>
+                            <tr>
+                                <td >558612</td>
+                                <td class="text-center">Property Management Company</td>
+                                <td class="text-center">kanji.lawson@example.com</td>
+                                <td class="text-center">22 Oct,2020</td>
+                                <td class="text-center"><span class="paid">Paid</span></td>
+                                <td class="text-right">$10,570</td>
+                            </tr>
+                            <tr>
+                                <td >651535</td>
+                                <td class="text-center">SubContractor</td>
+                                <td class="text-center">jackson.graham@example.com</td>
+                                <td class="text-center">1 Feb,2020</td>
+                                <td class="text-center"><span class="failed">Failed</span></td>
+                                <td class="text-right">$10,200</td>
+                            </tr>
+                            <tr>
+                                <td >653518</td>
+                                <td class="text-center">Mortagage Company</td>
+                                <td class="text-center">felecia.raid@example.com</td>
+                                <td class="text-center">22 Oct,2020</td>
+                                <td class="text-center"><span class="pending">Pending</span></td>
+                                <td class="text-right">$12,600</td>
+                            </tr>
+                            <tr>
+                                <td >487441</td>
+                                <td class="text-center">TPA</td>
+                                <td class="text-center">dolors.chambers@example.com</td>
+                                <td class="text-center">21 Sep,2020</td>
+                                <td class="text-center"><span class="paid">Paid</span></td>
+                                <td class="text-right">$11,170</td>
+                            </tr>
+                            <tr>
+                                <td >267400</td>
+                                <td class="text-center">Fire Department</td>
+                                <td class="text-center">nevaeh.simmons@example.com</td>
+                                <td class="text-center">17 Oct,2020</td>
+                                <td class="text-center"><span class="failed">Failed</span></td>
+                                <td class="text-right">$28,000</td>
+                            </tr>
+                            <tr>
+                                <td >449003</td>
+                                <td class="text-center">Insurance Carrier</td>
+                                <td class="text-center">curties.weaver@example.com</td>
+                                <td class="text-center">21 Sep,2020</td>
+                                <td class="text-center"><span class="paid">Paid</span></td>
+                                <td class="text-right">$10,000</td>
+                            </tr>
+                        </tbody>
 
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

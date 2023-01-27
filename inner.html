@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <!-- <link rel="script" href="js/bootstrap.bundle.min.js"/> -->
+</head>
+<body>
+    <header class="header-dash">
+        <div class="menu-bar" > <img src="./images/menu-bar.svg" alt="wait"> </div>
+        <div class="header-logo"> <img src="./images/header-logo.svg" alt="wait"> </div>
+        <div class="search"> 
+            <img class="search-icon" src="./images/search-icon.svg" alt="wait">
+            <input class="search-bar" type="search" placeholder="Search"/> 
+        </div>
+        <div class="noti-icon"> <img src="./images/notification-icon.svg" alt="wait"> </div>
+        <div class="profile"> <img src="./images/profile.png" alt="wait"> </div>
+        <p>user</p>
+        <div class="down-arrow"> <img src="./images/downward-arrow.svg" alt="wait"> </div>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li >
+                    <img src="./images/dashboard-default.svg" alt="wait">
+                    <p >Dashboard</p>
+                </li>
+                <li class="second-menu">
+                    <img src="./images/graph-active.svg" alt="wait">
+                    <p class="analysis">Analysis</p>
+                </li>
+                <li>
+                    <img src="./images/inbox-default.svg" alt="wait">
+                    <p>Inbox</p>
+                </li>
+                <li>
+                    <img src="./images/clock-default.svg" alt="wait">
+                    <p>History</p>
+                </li>
+                <li>
+                    <img src="./images/user-default.svg" alt="wait">
+                    <p>User</p>
+                </li>
+                <li>
+                    <img src="./images/maintenance-default.svg" alt="wait">
+                    <p>Maintenance</p>
+                </li>
+                <li>
+                    <img src="./images/setting-default.svg" alt="wait">
+                    <p>Setting</p>
+                </li>
+            </ul>
+        </nav>
+        <section class="inner">
+            <div class="inner-head">
+                <h1>Analysis</h1>
+            </div>
+            <div class="form-contant">
+                <div class="one-column">
+                    <h3>One Column</h3>
+                    <input type="text" name="name" placeholder="Name">
+                    <select name="dropdown" id="dropdown">
+                        <option value="1">Dropdown</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <textarea name="multiline" id="address" cols="30" rows="10" placeholder="Multiple Line"></textarea>
+                </div>
+                <div class="two-column">
+                    <h3>Two Column</h3>
+                    <div>
+                        <input type="text" name="name" placeholder="Name">
+                        
+                        <input type="text" name="" id="" placeholder="johndoe"></image>
+                        <input type="text" name="name" placeholder="Name">
+                        <select name="dropdown" id="dropdown">
+                            <option value="1">Dropdown</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="three-column">
+                    <h3>Three Column</h3>
+                    <input type="text" name="focus" onfocus="">
+                    <input type="password" name="pwd" value="abcdefdgh">
+                    <input type="text" name="disable" id="" placeholder="johndoe" disabled>
+                </div>
+                <div class="four-column">
+                    <h3>Four Column</h3>
+                    <input type="text" name="focus" >
+                    <input type="text" name="" id="" placeholder="Name"> 
+                    <input type="text" name="disable" id="" placeholder="johndoe" >
+                    <select name="dropdown" id="dropdown">
+                        <option value="1">Select</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="other">
+                    <h3>Other Design Element</h3>
+                    <div class="file">
+                        <h4>File Upload</h4>
+                        <input type="file" name="fileToUpload" id="file-upload">
+                    </div>
+                    <div class="radio-btn">
+                        <h4>Radio Button</h4>
+                        <input type="radio" name="option1" class="option1" for="radio1">
+                        <label id="radio1">Option 1</label>
+                        <input type="radio" name="option2" class="option2" for="radio2" checked>
+                        <label id="radio2">Option 2</label>
+                    </div>
+                    <div class="checkbox">
+                        <h4>Checkbox</h4>
+                        <input type="checkbox" name="option1" class="option1" for="check1">
+                        <label id="check1">Option 1</label>
+                        <input type="checkbox" name="option2" class="option2" for="check2" checked>
+                        <label id="check2">Option 2</label>
+                    </div>
+                    <div class="snackbar">
+                        <h4>Snackbar</h4>
+                        <div class="snackbar-contant">
+                            <div class="error">
+                                <img src="./images/error-icon.svg" alt="wait">
+                                This is an error Message
+                            </div>
+                            <div class="info">
+                                <img src="./images/info-icon.svg" alt="wait">
+                                This is an information Message
+                            </div>  
+                            <div class="warn">
+                                <img src="./images/warning-icon.svg" alt="wait">
+                                This is a warning Message
+                            </div>
+                            <div class="success">
+                                <img src="./images/success-icon.svg" alt="wait">
+                                This is a Success Message
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call">
+                        <h4>Call to Action</h4>
+                        <div>
+                            <input type="button" value="Primary" id="primary">
+                            <input type="button" value="Secondary" id="secondary">
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <h4>Tabs</h4>
+                        <div>
+                            <p><span>Tab 1</span></p>
+                            <p>Tab 2</p>
+                            <p>Tab 3</p>
+                        </div>
+                        <hr>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint deserunt quae, a molestiae numquam animi sapiente illum architecto suscipit fugit perspiciatis rerum quaerat dolores. Est excepturi omnis fugiat enim vel!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
