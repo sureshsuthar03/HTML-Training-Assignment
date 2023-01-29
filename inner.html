@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    
-    <!-- <link rel="script" href="js/bootstrap.bundle.min.js"/> -->
+    <link rel="script" href="js/bootstrap.bundle.min.js"/>
 </head>
 <body>
     <header class="header-dash">
@@ -59,78 +58,120 @@
         </nav>
         <section class="inner">
             <div class="inner-head">
-                <h1>Analysis</h1>
+                <h2>Analysis</h2>
             </div>
-            <div class="form-contant">
-                <div class="one-column">
-                    <h3>One Column</h3>
-                    <input type="text" name="name" placeholder="Name">
-                    <select name="dropdown" id="dropdown">
-                        <option value="1">Dropdown</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
+            <div class="form-control form-contant">
+                    <h4>One Column</h4>
+                    <input class="form-control fs-7"type="text" name="name" placeholder="Name">
+                    <select name="" id="" class="form-select fs-7d one-column-select">
+                        <option value="">Dropdown</option>
                     </select>
-                    <textarea name="multiline" id="address" cols="30" rows="10" placeholder="Multiple Line"></textarea>
-                </div>
-                <div class="two-column">
-                    <h3>Two Column</h3>
-                    <div>
-                        <input type="text" name="name" placeholder="Name">
-                        
-                        <input type="text" name="" id="" placeholder="johndoe"></image>
-                        <input type="text" name="name" placeholder="Name">
-                        <select name="dropdown" id="dropdown">
-                            <option value="1">Dropdown</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
+                    <textarea name="" id="" rows="4" class="form-control fs-textarea"
+                    placeholder="Multiple Line"></textarea>
+                    <br>
+                    <h4>Two Column</h4>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control fs-7" placeholder="Name">
+                        </div>
+                        <div class="col legend-content">
+                            <label for="" class="legend">Username</label>
+                            <input type="text" class="form-control fs-7" value="johndoe">
+                        </div>
                     </div>
-                </div>
-                <div class="three-column">
-                    <h3>Three Column</h3>
-                    <input type="text" name="focus" onfocus="">
-                    <input type="password" name="pwd" value="abcdefdgh">
-                    <input type="text" name="disable" id="" placeholder="johndoe" disabled>
-                </div>
-                <div class="four-column">
-                    <h3>Four Column</h3>
-                    <input type="text" name="focus" >
-                    <input type="text" name="" id="" placeholder="Name"> 
-                    <input type="text" name="disable" id="" placeholder="johndoe" >
-                    <select name="dropdown" id="dropdown">
-                        <option value="1">Select</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control fs-7" placeholder="Password">
+                        </div>
+                        <div class="col">
+                            <select name="" id="" class="form-select fs-7d two-column-select">
+                                <option value="">Dropdown</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Three Column</h4>
+                    <div class="row">
+                        <div class="col legend-content">
+                            <label for="" class="legend">Focus</label>
+                            <input type="text" class="focus fs-7 three-column-focus" autofocus>
+                        </div>
+                        <div class="col legend-content">
+                            <label for="" class="legend">Password</label>
+                            <input type="password" class="form-control three-column-password" value="abcdesf">
+                        </div>
+                        <div class="col legend-content">
+                            <label for="" class="legend">Disabled</label>
+                            <input type="text" class="fs-7 disable three-column-disable" disabled value="John Doe">
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Four Column</h4>
+                    <div class="row">
+                        <div class="col legend-content">
+                            <label for="" class="legend text-danger">Designation</label>
+                            <input type="text" class="form-control border border-danger fs-7 four-column" value="UI Designer">
+                            <label for="" class="form-label required text-danger">Enter Valid Data</label>
+                        </div>
+                        <div class="col legend-content">
+                            <input type="text" class="form-control fs-7 four-column" placeholder="Name">
+                            <label for="" class="form-label required text-secondary">Enter your full name as per ID</label>
+                        </div>
+                        <div class="col legend-content">
+                            <label for="" class="legend">Username</label>
+                            <input type="text" class="form-control fs-7 four-column" value="John Doe">
+                        </div>
+                        <div class="col">
+                            <select name="" id="" class="form-select fs-7d four-column">
+                                <option value="">Dropdown</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
                 <div class="other">
-                    <h3>Other Design Element</h3>
+                    <h4>Other Design Element</h4>
+                    <br>
                     <div class="file">
-                        <h4>File Upload</h4>
+                        <h5>File Upload</h5>
                         <input type="file" name="fileToUpload" id="file-upload">
                     </div>
-                    <div class="radio-btn">
-                        <h4>Radio Button</h4>
-                        <input type="radio" name="option1" class="option1" for="radio1">
-                        <label id="radio1">Option 1</label>
-                        <input type="radio" name="option2" class="option2" for="radio2" checked>
-                        <label id="radio2">Option 2</label>
+                    <br>
+                    <h5>Radio Button</h5>
+                    <div class="d-flex">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radio" id="">
+                            <label class="form-check-label" for="">
+                                Option 1
+                            </label>
+                        </div>
+                        <div class="form-check mx-5">
+                            <input class="form-check-input" type="radio" checked name="radio" id="">
+                            <label class="form-check-label" for="">
+                                Option 2
+                            </label>
+                        </div>
                     </div>
-                    <div class="checkbox">
-                        <h4>Checkbox</h4>
-                        <input type="checkbox" name="option1" class="option1" for="check1">
-                        <label id="check1">Option 1</label>
-                        <input type="checkbox" name="option2" class="option2" for="check2" checked>
-                        <label id="check2">Option 2</label>
+                    <br>
+                    <h5>Checkbox</h5>
+                    <div class="d-flex">
+                        <div class="form-check">
+                            <input class="form-check-input check" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Option 1
+                            </label>
+                        </div>
+                        <div class="form-check mx-5">
+                            <input class="form-check-input check" type="checkbox" value="" id="" checked>
+                            <label class="form-check-label" for="">
+                                Option 2
+                            </label>
+                        </div>
                     </div>
+                    <br>
                     <div class="snackbar">
-                        <h4>Snackbar</h4>
+                        <h5>Snackbar</h5>
                         <div class="snackbar-contant">
                             <div class="error">
                                 <img src="./images/error-icon.svg" alt="wait">
@@ -150,15 +191,17 @@
                             </div>
                         </div>
                     </div>
+                    <br>
                     <div class="call">
-                        <h4>Call to Action</h4>
+                        <h5>Call to Action</h5>
                         <div>
                             <input type="button" value="Primary" id="primary">
                             <input type="button" value="Secondary" id="secondary">
                         </div>
                     </div>
+                    <br>
                     <div class="tab">
-                        <h4>Tabs</h4>
+                        <h5>Tabs</h5>
                         <div>
                             <p><span>Tab 1</span></p>
                             <p>Tab 2</p>

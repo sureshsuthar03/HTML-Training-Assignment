@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="script" href="js/bootstrap.bundle.min.js"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="boostrap" href="css/bootstrap.min.css"/>
-    <link rel="boostrap" href="js/bootstrap.bundle.min.js"/>
 </head>
-<body>
-    <div class="container">
+<body class="login-body">
+    <div class="container-fluid">
         <div class="firstpage-img">
-            <img src="images/hero-image.png" alt="wait">
+            <img src="./images/hero-image.png" alt="wait">
         </div>
         <div class="right-text">
             <div class="txt">
@@ -21,14 +21,14 @@
                 <p>We are <span>experts</span> in business, marketing, growth, & sales.</p>
             </div>
             <div class="login">
-                <p>login into account</p>
+                <p class="login-info">Login into your account</p>
                 <input type="text" placeholder="Username" name="username"/>
                 <input type="text" placeholder="Password" name="pwd"/>
-                <div class="btn">
+                <div class="button">
                     <input type="submit" value="Login" name="login"/>
                     <a id="fgt" href="#">Forgot Password?</a>
                 </div>
-                <p>Are you a new Member? 
+                <p class="login-reg">Are you a new Member? 
                 <a id="reg" href="#"> Register Here</a></p>
             </div>
         </div>
