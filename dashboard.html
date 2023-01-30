@@ -9,11 +9,22 @@
     <link rel="script" href="js/bootstrap.bundle.min.js"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        function myFunction(){
+            $(document).ready(function(){
+                $("#toggle").click(function(){
+                    $("#sidebar-navigation").toggle();
+                });
+            });     
+        }
+    </script>
 </head>
 <body>
     <header class="header-dash">
-        <div class="menu-bar" > <img src="./images/menu-bar.svg" alt="wait"> </div>
-        <div class="header-logo"> <img src="./images/header-logo.svg" alt="wait"> </div>
+        <div class="menu-bar" ><button id="toggle" onclick="myFunction()"><img src="./images/menu-bar.svg" alt="wait"></button></div>
+        <div class="header-logo d-block "> <img src="./images/header-logo.svg" alt="wait"> </div>
+        <div class="header-logo-mobile d-none "> <img src="./images/mobile-header-logo.svg " alt="wait"> </div>
         <div class="search"> 
             <img class="search-icon" src="./images/search-icon.svg" alt="wait">
             <input class="search-bar" type="search" placeholder="Search"/> 
@@ -24,7 +35,7 @@
         <div class="down-arrow"> <img src="./images/downward-arrow.svg" alt="wait"> </div>
     </header>
     <main>
-        <nav>
+        <nav id="sidebar-navigation">
             <ul>
                 <li class="first-menu">
                     <img src="./images/dashboard-active.svg" alt="wait">
@@ -32,7 +43,7 @@
                 </li>
                 <li>
                     <img src="./images/graph-default.svg" alt="wait">
-                    <p>Analysis</p>
+                    <p><a href="inner.html">Analysis</a></p>
                 </li>
                 <li>
                     <img src="./images/inbox-default.svg" alt="wait">
@@ -192,7 +203,7 @@
                             </tr>
                             <tr>
                                 <td >653518</td>
-                                <td class="text-center">Mortagage Company</td>
+                                <td class="text-center">Mortgage Company</td>
                                 <td class="text-center">felecia.raid@example.com</td>
                                 <td class="text-center">22 Oct,2020</td>
                                 <td class="text-center"><span class="pending">Pending</span></td>
@@ -223,7 +234,6 @@
                                 <td class="text-right">$10,000</td>
                             </tr>
                         </tbody>
-
                     </table>
                 </div>
             </div>
