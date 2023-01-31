@@ -1,77 +1,80 @@
 /* css for login page */
 .login-body{
     background: #FAFAFA ;
+    min-width: 100%;
 }
 .container-fluid{
     display: flex;
-    padding-left:140px;
-    padding-top: 50px;
+    /* padding-left:12vw; */
+    padding-top: 4vw;
+}
+
+.firstpage-img{
+    width: 50%;
+    text-align: center;
 }
 .firstpage-img img{
-    margin: auto;
-    max-width: 540px;
-    height: 540px;
+    
+    width: 38vw;
     box-shadow: 0px 4px 31px #0000000A;
     border: 20px solid #FFFFFF;
     border-radius: 50%;
 }
 .right-text{
-    float: right;
-    margin: auto;
-    margin-top: 40px;
+    width:50%;
+    margin-top: 3vw;
 }
 .txt img{
-    width: 260px;
-    height: 50px;
+    width: 50%;
+    margin-left: 1vw;
 }
 .txt p{
-    width: 500px;
-    height: 100px;
+    width: 35vw;
+    height: 8vw;
     text-align: left;
     margin-left: 15px;
-    font: normal normal 300 30px Arial;
+    font: normal normal 300 2.5vw Arial;
     color: #3E3E3E;
 }
 .txt p span{
-    width: 120px;
-    height: 30px;
+    width: 10vw;
+    height: 8vw;
     text-align: left;
-    font: normal normal 900 30px Arial;
+    font: normal normal 900 2.5vw Arial;
     color: #C8242F;
 }
 .login{
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
-    width: 429px;
+    margin-left: 1.2vw;
+    width: 31vw;
 }
 .login-info{
-    width: 260px;
+    width: 20vw;
     height: 33px;
     text-align: left;
-    font: normal normal normal 20px/33px Arial;
+    font: normal normal normal 1.6vw/33px Arial;
     letter-spacing: 0px;
     color: #3E3E3E;
-    opacity: 1;
 }
 .login input[type="text"]{
     margin: 15px 0px;
-    width: 429px;
-    height: 40px;
+    width: 31vw;
+    height: 3vw;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #ADADAD;
     border-radius: 5px;
     padding: 0px 15px;
-    font-size: 16px;
+    font-size: 1.2vw;
 }
 .login input[type="submit"]{
-    width: 138px;
-    height: 38px;
+    width: 9vw;
+    height: 3vw;
     background: #C8242F 0% 0% no-repeat padding-box;
     border-radius: 23px;
     border: none;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 1.2vw;
 }
 .login .button{
     margin-top: 15px;
@@ -81,19 +84,19 @@
     flex: none;
     float: right;
     margin-top: 10px;
-    font: normal normal normal 16px Arial;
+    font: normal normal normal 1.2vw Arial;
     color: #ADADAD;
     text-decoration: none;
 }
 .login-reg{
     width:100%;
     margin-top: 25px;
-    font: normal normal normal 16px Arial;
+    font: normal normal normal 1.2vw Arial;
     color: #ADADAD;
     text-decoration: none;
 }
 .login #reg{
-    font: normal normal normal 16px Arial;
+    font: normal normal normal 1.2vw Arial;
     color:  #C8242F;;
     text-decoration: none;
 }
@@ -105,21 +108,31 @@
     .container-fluid{
         display: flex;
         flex-direction: column;
+        
         padding:20px 40px ;
-        width: 80%;
-        margin: 20px;
+        width: 100%;
+    }
+    .firstpage-img{
+        display: flex;
+        justify-content: center;
+        width:100%;
     }
     .firstpage-img img{
-        margin: auto;
-        width: 100%;
+       
+        width: 38vw;
         height: auto;
         box-shadow: 0px 4px 31px #0000000A;
-        border: 15px solid #FFFFFF;
+        border: 12px solid #FFFFFF;
         border-radius: 50%;
     }
     .right-text{
         width: 100%;
         height: auto;
+        margin-left: 8vw;
+    }
+    .txt{
+        width:75%;
+        text-align: center;
     }
     .txt img{
         width: 60%;
@@ -127,43 +140,55 @@
     }
     .txt p{
         margin-top: 10px;
-        width:80%;
+        width:100%;
+        text-align: center;
         height: auto;
-        font: normal normal 200 25px Arial;
+        font: normal normal 200 4vw Arial;
         color: #3E3E3E;
     }
     .txt p span{
         width: 100%;
         height: auto;
-        font: normal normal 900 25px Arial;
+        font: normal normal 900 4vw Arial;
         color: #C8242F;
     }
+    .login{
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+    }
     .login-info{
-        width: 60%;
+        width: 100%;
         height: auto;
-        font: normal normal normal 15px Arial;
+        text-align: center;
+        font: normal normal normal 3vw Arial;        
     }
     .login input[type="text"]{
-        width: 80%;
+        width: 100%;
         height: auto;
-        font-size: 14px;
+        font-size: 3vw;
+        text-align: center;
+        justify-content: center;
     }
     .login input[type="submit"]{
-        width: 100px;
-        height: 30px;
-        font-size: 14px;
-    }
-    .login{
-        width: 80%;
+        width: 25%;
+        height: 5vw;
+        font-size: 3vw;
+        margin-left: 25vw;
     }
     .button{
         margin-top: 15px;
-        width: 80%;
+        width: 100%;
         height: auto;  
         display: flex;
         flex-direction: column;
     }
-    
+    .login .button #fgt{
+        font: normal normal normal 3vw Arial;
+    }
+    .login-reg, .login #reg{
+        font: normal normal normal 3vw Arial;
+    }
 }
 
 /* css for dashboard */
@@ -212,7 +237,7 @@
 }
 .search-bar{
     height: 25px;
-    width: 60vw;
+    width: 55vw;
     margin-left: 20px;
     padding-left: 35px;
     border: none;
@@ -288,6 +313,10 @@ li p a:hover{
     background-color: #fff3f4;
     border-radius: 5px;
 }
+li:hover{
+    background-color: #fff3f4bb;
+    border-radius: 5px;
+}
 /* dashboard main contant css */
 .main-contant{
     padding: 25px;
@@ -333,7 +362,7 @@ li p a:hover{
     margin-bottom: 15px;
 }
 .line-chart{
-    width:700px;
+    width:65%;
     margin: 5px;
     margin-right: 10px;
     padding: 15px;
@@ -357,6 +386,9 @@ li p a:hover{
     color: #ADADAD;
     background-color: #FFFFFF;
 }
+.line-chart-head p:hover{
+    padding-top: 2px;
+}
 .line-year{
     margin: 5px;
     margin-top: 0px;
@@ -367,11 +399,11 @@ li p a:hover{
     background-color: #FFFFFF;
 }
 .line-chart img{
-    width:680px;
+    width:100%;
     background-color: #FFFFFF;
 }
 .pie-chart{
-    width: 360px;
+    width: 35%;
     margin: 5px;
     padding: 10px;
     background-color: #FFFFFF;
@@ -382,6 +414,7 @@ li p a:hover{
 .pie-chart img{
     margin-left:55px;
     background-color: #FFFFFF;
+    width: 80%;
 }
 .pie-legend div div{
     margin: 10px;
@@ -393,10 +426,11 @@ li p a:hover{
 .pie-legend {
     display: grid;
     grid-template-columns:auto auto;
-    width: 360px;
+    width: 27vw;
 }
-.pie-legend div{
+.legend-div{
     display: flex;
+    /* width: 360px; */
 }
 .united{
     width:10px;
@@ -479,13 +513,45 @@ td{
     padding: 10px;
     border-bottom: 1px solid  #ADADAD;
 }
+@media screen and (min-width:822px) and (max-width:1154px) {
+    .first-row{
+        flex-wrap: wrap;
+    }
+    .pie-legend {
+        display: grid;
+        grid-template-columns: auto;
+        width: 20vw;
+    }
+    .legend-div{
+        width: 20vw;
+    }
+    .first-legend{
+        width:26vw;
+    }
+    .pie-chart{
+        height: auto;
+    }
+}
+@media screen and (max-width:991px) and (min-width:822px) {
+    li p{
+        display: none;
+    }
+}
 @media screen and (min-width:360px) and (max-width:821px) {
+    .menu-bar{
+        width:10%;
+    }
     .search-bar{
-        width:20vw;
+        width:21vw;
+        padding-left: 20px;
+        font-size: 14px;
     }
     main{
         display: flex;
         flex-direction: column;
+    }
+    .main-contant{
+        width: 100%;
     }
     nav{
         width: 100%;
@@ -500,22 +566,26 @@ td{
     .invoice-table{
         width: 100%;
     }
-    .header-logo img{
-        display: none;
-    }
-    .header-logo-mobile{
-        display: block;
-    }
     .header-dash p{
         display: none;
     }
+    .line-chart{
+        width: 100%;
+    }
+    .pie-chart{
+        width: 100%;
+    }
+    .pie-legend{
+        width: 100%;
+    }
+    
 }
 
 /* css for inner page */
 .inner{
     font-family: Arial, Helvetica, sans-serif;
     background-color:  #FAFAFA;
-    width: 84%;
+    /* width: 84%; */
 }
 .inner-head{
     margin: 40px;
@@ -530,7 +600,7 @@ td{
 }
 .form-contant{
     margin: 40px;
-    width:93%;
+    width:90%;
     border: none;
     padding: 25px;
 }
@@ -577,10 +647,15 @@ h4{
 .two-column-select,.three-column-focus,.three-column-password,.three-column-disable,.four-column{
     width:100%;
 }
+.three-column-disable{
+    border:1px  #ADADAD dashed;
+    border-radius: 3px;
+}
 .form-check-input:checked{
     color: #C8242F;
     background-color: #C8242F;
     border: 1px solid #C8242F;
+    accent-color: #C8242F;
 }
 .check{
     border-color: #ADADAD;
@@ -589,7 +664,12 @@ h4{
     border: 1px solid #C8242F;
     border-radius: 18px;
     background-color: #FFFFFF;
-    /* color:#C8242F ; */
+    width: 124px;
+}
+.file button:hover{
+    border: 1px solid #C8242F;
+    border-radius: 18px;
+    background-color: #C8242F;
     width: 124px;
 }
 .file button label{
@@ -600,13 +680,6 @@ h4{
 }
 .snackbar div img{
     width: 20px;
-}
-.snackbar-contant{
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.snackbar-contant div{
-    margin: 10px;
 }
 .error{
     border: 1px solid #FF3535;
@@ -659,6 +732,10 @@ h4{
     font-size: 18px;
     background-color: #FFFFFF;
 }
+#secondary:hover{
+    background: #C8242F 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
 .tab div{
     display: flex;
 }
@@ -673,3 +750,30 @@ h4{
 hr{
     margin-top: -15px;
 }
+
+/* #tabs h6.section-title{
+    color: #ADADAD;
+}
+.tab-nav{
+    width: 100%;
+    height: auto;
+}
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #eee;
+    font-size: 20px;
+}
+.nav-tabs .active{
+    color: #C8242F;
+} */

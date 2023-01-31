@@ -37,7 +37,7 @@
         <nav id="sidebar-navigation">
             <ul>
                 <li >
-                    <img src="./images/dashboard-default.svg" alt="wait">
+                    <a href="dashboard.html"><img src="./images/dashboard-default.svg" alt="wait"></a>
                     <p ><a href="dashboard.html">Dashboard</a></p>
                 </li>
                 <li class="second-menu">
@@ -80,21 +80,21 @@
                     placeholder="Multiple Line"></textarea>
                     <br>
                     <h4>Two Column</h4>
-                    <div class="row">
-                        <div class="col">
+                    <div class="row ">
+                        <div class="col col-lg-6 col-md-6  col-12 my-3">
                             <input type="text" class="form-control fs-7" placeholder="Name">
                         </div>
-                        <div class="col legend-content">
+                        <div class="col col-lg-6 col-md-6  my-3 col-12 legend-content">
                             <label for="" class="legend">Username</label>
                             <input type="text" class="form-control fs-7" value="johndoe">
                         </div>
                     </div>
                     <br>
                     <div class="row">
-                        <div class="col">
+                        <div class="col col-lg-6 col-md-6  col-12 my-3">
                             <input type="text" class="form-control fs-7" placeholder="Password">
                         </div>
-                        <div class="col">
+                        <div class="col col-lg-6 col-md-6  col-12 my-3">
                             <select name="" id="" class="form-select fs-7d two-column-select">
                                 <option value="">Dropdown</option>
                             </select>
@@ -103,15 +103,15 @@
                     <br>
                     <h4>Three Column</h4>
                     <div class="row">
-                        <div class="col legend-content">
+                        <div class="col col-lg-4 col-md-4 col-12 my-3 legend-content">
                             <label for="" class="legend">Focus</label>
                             <input type="text" class="focus fs-7 three-column-focus" autofocus>
                         </div>
-                        <div class="col legend-content">
+                        <div class="col col-lg-4 col-md-4 col-12 my-3 legend-content">
                             <label for="" class="legend">Password</label>
                             <input type="password" class="form-control three-column-password" value="abcdesf">
                         </div>
-                        <div class="col legend-content">
+                        <div class="col col-lg-4 col-md-4 col-12 my-3 legend-content">
                             <label for="" class="legend">Disabled</label>
                             <input type="text" class="fs-7 disable three-column-disable" disabled value="John Doe">
                         </div>
@@ -119,20 +119,20 @@
                     <br>
                     <h4>Four Column</h4>
                     <div class="row">
-                        <div class="col legend-content">
+                        <div class="col col-lg-3 col-md-3 col-12 my-3 legend-content">
                             <label for="" class="legend text-danger">Designation</label>
                             <input type="text" class="form-control border border-danger fs-7 four-column" value="UI Designer">
                             <label for="" class="form-label required text-danger "><small>Enter Valid Data</small></label>
                         </div>
-                        <div class="col legend-content">
+                        <div class="col col-lg-3 col-md-3 col-12 my-3 legend-content">
                             <input type="text" class="form-control fs-7 four-column" placeholder="Name">
                             <label for="" class="form-label required text-secondary"><small> your full name as per ID</small></label>
                         </div>
-                        <div class="col legend-content">
+                        <div class="col col-lg-3 col-md-3 col-12 my-3 legend-content">
                             <label for="" class="legend">Username</label>
                             <input type="text" class="form-control fs-7 four-column" value="John Doe">
                         </div>
-                        <div class="col">
+                        <div class="col col-lg-3 col-md-3 col-12 my-3">
                             <select name="" id="" class="form-select fs-7d four-column">
                                 <option value="">Dropdown</option>
                             </select>
@@ -183,22 +183,30 @@
                     <br>
                     <div class="snackbar">
                         <h5>Snackbar</h5>
-                        <div class="snackbar-contant">
-                            <div class="error">
-                                <img src="./images/error-icon.svg" alt="wait">
-                                This is an error Message
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-6 col-12 my-3 ">
+                                <div class=" error">
+                                    <img src="./images/error-icon.svg" alt="wait">
+                                    This is an error Message
+                                </div>
                             </div>
-                            <div class="info">
-                                <img src="./images/info-icon.svg" alt="wait">
-                                This is an information Message
-                            </div>  
-                            <div class="warn">
-                                <img src="./images/warning-icon.svg" alt="wait">
-                                This is a warning Message
+                            <div class=" col-lg-6 col-md-6  col-12 my-3">
+                                <div class="info">
+                                    <img src="./images/info-icon.svg" alt="wait">
+                                    This is an information Message
+                                </div>
                             </div>
-                            <div class="success">
-                                <img src="./images/success-icon.svg" alt="wait">
-                                This is a Success Message
+                            <div class=" col col-lg-6 col-md-6  col-12 my-3">
+                                <div class="warn">
+                                    <img src="./images/warning-icon.svg" alt="wait">
+                                    This is a warning Message
+                                </div>
+                            </div>
+                            <div class="col col-lg-6 col-md-6  col-12 my-3">
+                                <div class="success">
+                                    <img src="./images/success-icon.svg" alt="wait">
+                                    This is a Success Message
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -220,8 +228,35 @@
                         </div>
                         <hr>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint deserunt quae, a molestiae numquam animi sapiente illum architecto suscipit fugit perspiciatis rerum quaerat dolores. Est excepturi omnis fugiat enim vel!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque earum dicta tempore impedit inventore amet iure officia error sed exercitationem consequatur quibusdam sit, ea et eveniet alias dignissimos, recusandae molestias. Perspiciatis nobis recusandae dolorum fuga assumenda mollitia. Quas soluta a aut delectus ipsam exercitationem animi sed vero quis dignissimos.                            
                         </p>
+                        <!-- <section id="tabs">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 ">
+                                        <nav class="tab-nav">
+                                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tab1</a>
+                                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Tab2</a>
+                                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Tab3</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </section> -->
                     </div>
                 </div>
             </div>

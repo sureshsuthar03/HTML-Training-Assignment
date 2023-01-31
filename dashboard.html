@@ -24,7 +24,7 @@
     <header class="header-dash">
         <div class="menu-bar" ><button id="toggle" onclick="myFunction()"><img src="./images/menu-bar.svg" alt="wait"></button></div>
         <div class="header-logo d-block "> <img src="./images/header-logo.svg" alt="wait"> </div>
-        <div class="header-logo-mobile d-none "> <img src="./images/mobile-header-logo.svg " alt="wait"> </div>
+        <!-- <div class="header-logo-mobile d-none "> <img src="./images/mobile-header-logo.svg " alt="wait"> </div> -->
         <div class="search"> 
             <img class="search-icon" src="./images/search-icon.svg" alt="wait">
             <input class="search-bar" type="search" placeholder="Search"/> 
@@ -42,7 +42,7 @@
                     <p class="dash">Dashboard</p>
                 </li>
                 <li>
-                    <img src="./images/graph-default.svg" alt="wait">
+                    <a href="inner.html"><img src="./images/graph-default.svg" alt="wait"></a>
                     <p><a href="inner.html">Analysis</a></p>
                 </li>
                 <li>
@@ -113,7 +113,7 @@
                         <div>
                             <p>Weekly</p>
                             <p>Monthly</p>
-                            <span class="line-year">Yearly</span>
+                            <p><span class="line-year">Yearly</span></p>
                         </div>
                     </div>
                     <img src="./images/data-graph.png" alt="wait">
@@ -124,19 +124,19 @@
                     </div>
                     <img src="./images/pie-chart.svg" alt="wait">
                         <div class="pie-legend">
-                            <div>
+                            <div class="legend-div first-legend">
                                 <div class="united"></div>
                                 <p>United States of America</p>
                             </div>
-                            <div>
+                            <div class="legend-div">
                                 <div class="canada"></div>
                                 <p>Canada</p>
                             </div>
-                            <div>
+                            <div class="legend-div">
                                 <div class="russia"></div>
                                 <p>Russia</p>
                             </div>
-                            <div>
+                            <div class="legend-div">
                                 <div class="india"></div>
                                 <p>India</p>
                             </div>
@@ -149,7 +149,7 @@
                     <p>View All</p>
                 </div>
                 <div class="third-row-contant">
-                    <table class="table invoice-table"> 
+                    <table class="table table-responsive invoice-table"> 
                         <thead>
                             <tr>
                                 <td >INVOICE</td>
