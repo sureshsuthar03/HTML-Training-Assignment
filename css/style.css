@@ -27,20 +27,21 @@
 .txt img{
     width: 50%;
     margin-left: 1vw;
+    height: 12vh;
 }
 .txt p{
     width: 35vw;
-    height: 8vw;
+    /* height: 20vh; */
     text-align: left;
     margin-left: 15px;
-    font: normal normal 300 2.5vw Arial;
+    font: normal normal 300 2rem Arial;
     color: #3E3E3E;
 }
 .txt p span{
     width: 10vw;
-    height: 8vw;
+    /* height: 20vh; */
     text-align: left;
-    font: normal normal 900 2.5vw Arial;
+    font: normal normal 900 2rem Arial;
     color: #C8242F;
 }
 .login{
@@ -53,28 +54,27 @@
     width: 20vw;
     height: 33px;
     text-align: left;
-    font: normal normal normal 1.6vw/33px Arial;
-    letter-spacing: 0px;
+    font: normal normal normal 1.5rem/33px Arial;
     color: #3E3E3E;
 }
 .login input[type="text"]{
     margin: 15px 0px;
     width: 31vw;
-    height: 3vw;
+    height: 5vh;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #ADADAD;
     border-radius: 5px;
     padding: 0px 15px;
-    font-size: 1.2vw;
+    font-size: 1.1rem;
 }
 .login input[type="submit"]{
     width: 9vw;
-    height: 3vw;
+    height: 5vh;
     background: #C8242F 0% 0% no-repeat padding-box;
     border-radius: 23px;
     border: none;
     color: #FFFFFF;
-    font-size: 1.2vw;
+    font-size: 1.1rem;
 }
 .login .button{
     margin-top: 15px;
@@ -84,19 +84,19 @@
     flex: none;
     float: right;
     margin-top: 10px;
-    font: normal normal normal 1.2vw Arial;
+    font: normal normal normal 1rem Arial;
     color: #ADADAD;
     text-decoration: none;
 }
 .login-reg{
     width:100%;
     margin-top: 25px;
-    font: normal normal normal 1.2vw Arial;
+    font: normal normal normal 1rem Arial;
     color: #ADADAD;
     text-decoration: none;
 }
 .login #reg{
-    font: normal normal normal 1.2vw Arial;
+    font: normal normal normal 1rem Arial;
     color:  #C8242F;;
     text-decoration: none;
 }
@@ -128,10 +128,10 @@
     .right-text{
         width: 100%;
         height: auto;
-        margin-left: 8vw;
+        /* margin-left: 8vw; */
     }
     .txt{
-        width:75%;
+        width:100%;
         text-align: center;
     }
     .txt img{
@@ -143,38 +143,37 @@
         width:100%;
         text-align: center;
         height: auto;
-        font: normal normal 200 4vw Arial;
+        font: normal normal 200 2rem Arial;
         color: #3E3E3E;
     }
     .txt p span{
         width: 100%;
         height: auto;
-        font: normal normal 900 4vw Arial;
+        font: normal normal 900 2rem Arial;
         color: #C8242F;
     }
     .login{
         text-align: center;
         justify-content: center;
-        width: 80%;
+        width: 100%;
     }
     .login-info{
         width: 100%;
         height: auto;
         text-align: center;
-        font: normal normal normal 3vw Arial;        
+        font: normal normal normal 1.5rem Arial;        
     }
     .login input[type="text"]{
         width: 100%;
-        height: auto;
-        font-size: 3vw;
+        height: 5vh;
+        font-size: 2vh;
         text-align: center;
         justify-content: center;
     }
     .login input[type="submit"]{
         width: 25%;
-        height: 5vw;
-        font-size: 3vw;
-        margin-left: 25vw;
+        height: 4vh;
+        margin-left: 32vw;
     }
     .button{
         margin-top: 15px;
@@ -184,12 +183,13 @@
         flex-direction: column;
     }
     .login .button #fgt{
-        font: normal normal normal 3vw Arial;
+        font: normal normal normal 2.5vh Arial;
     }
     .login-reg, .login #reg{
-        font: normal normal normal 3vw Arial;
+        font: normal normal normal 2.5vh Arial;
     }
 }
+
 
 /* css for dashboard */
 /*Dashboard header css*/
@@ -555,6 +555,7 @@ td{
     }
     nav{
         width: 100%;
+        display: none;
     }
     .first-row{
         flex-wrap: wrap;
@@ -750,30 +751,8 @@ h4{
 hr{
     margin-top: -15px;
 }
-
-/* #tabs h6.section-title{
-    color: #ADADAD;
+@media screen and (max-width:500px) {
+    .inner-head,.form-contant{
+        margin:20px;
+    }
 }
-.tab-nav{
-    width: 100%;
-    height: auto;
-}
-#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #f3f3f3;
-    background-color: transparent;
-    border-color: transparent transparent #f3f3f3;
-    border-bottom: 4px solid !important;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#tabs .nav-tabs .nav-link {
-    border: 1px solid transparent;
-    border-top-left-radius: .25rem;
-    border-top-right-radius: .25rem;
-    color: #eee;
-    font-size: 20px;
-}
-.nav-tabs .active{
-    color: #C8242F;
-} */
